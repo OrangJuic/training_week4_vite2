@@ -1,0 +1,35 @@
+/* 通用樣式button */
+.btn {
+  border-radius: 4px;
+  padding: 12px 24px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+  /* cursor修改游標 */
+  cursor: pointer;
+  /* 去除邊線和背景色改透明 */
+  border: none;
+  background-color: transparent;
+}
+
+@media(max-width:767px) {
+  .btn-md {
+    padding: 8px 16px;
+  }
+}
+
+/* 黑色按鈕 */
+.btn-dark {
+  background-color: var(--neutral-900);
+  color: #fff;
+}
+
+/* 白色按鈕 */
+.btn-light {
+  border: 1px solid var(--neutral-900);
+}
+
+/* 綠色按鈕 */
+.btn-green {
+  background-color: var(--primary-300);
+}

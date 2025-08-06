@@ -1,3 +1,183 @@
-.index-title {
-  font-size: 100px;
+header {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner.png?raw=true);
+  background-repeat: no-repeat;
+  /* 背景圖不重複 */
+  background-position: center;
+  /* 背景圖置中 */
+  background-size: cover;
+  /* contain使背景圖縮小至內容的大小/cover背景圖填滿容器區塊 */
+  padding: 288px 200px;
+}
+
+@media(max-width:767px) {
+  header {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-sm.png?raw=true);
+    background-repeat: no-repeat;
+    /* 背景圖不重複 */
+    background-position: center;
+    /* 背景圖置中 */
+    background-size: cover;
+    /* contain使背景圖縮小至內容的大小/cover背景圖填滿容器區塊 */
+    padding: 155px 24px;
+  }
+}
+
+/* 熱銷補貨 */
+.popular {
+  position: relative;
+}
+
+.popular-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* 絕對定位 */
+  padding: 8px 12px;
+  background-color: var(--primary-100);
+  color: var(--primary-400);
+  font-size: 14px;
+}
+
+@media(max-width:767px) {
+
+  /* 行動版變成滾動條之後的row和col間距設定 */
+  .popular-md-row {
+    margin-left: -8px;
+    margin-right: -8px;
+  }
+
+  .popular-md-col {
+    min-width: 316px;
+    /*最小300px+16間距*/
+    padding-left: 8px;
+    /*16間距/2=8*/
+    padding-right: 8px;
+  }
+}
+
+
+
+/* 輪播 */
+.banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded.png?raw=true);
+  background-repeat: no-repeat;
+  /* 背景圖不重複 */
+  background-position: center;
+  /* 背景圖置中 */
+  background-size: cover;
+  /* 使背景圖縮小至內容的大小*/
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+@media(max-width:767px) {
+  .banner {
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/banner-co-branded-sm.png?raw=true);
+    padding-top: 64px;
+    padding-bottom: 64px;
+    overflow: hidden;
+  }
+}
+
+.star-position {
+  position: absolute;
+  width: 68px;
+  left: calc(50% - 397px);
+  top: 68px;
+}
+
+.sparkle-position {
+  position: absolute;
+  width: 76px;
+  right: calc(50% - 357px);
+  bottom: 132px;
+}
+
+@media(max-width:767px) {
+  .star-position {
+    top: 32px;
+    left: -20px;
+  }
+
+  .sparkle-position {
+    bottom: 104px;
+    right: -28px;
+  }
+
+  /* 因此處裝飾圖片會超出容器，因此會出現橫向捲軸，需於父層加上 overflow:hidden (隱藏超出的部分)*/
+}
+
+
+
+
+/*依系列選購*/
+/* 定位 */
+.relative {
+  position: relative;
+}
+
+.position-center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.position-lt {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+/* 遮罩 */
+.mask {
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+
+
+
+/* 穿搭靈感區塊格線系統 */
+.inspiration-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -4px;
+}
+
+.inspiration-col-4 {
+  padding: 4px;
+  width: calc(100%/12*4);
+}
+
+.inspiration-col-6 {
+  padding: 4px;
+  width: calc(100%/12*6);
+}
+
+.inspiration-col-12 {
+  padding: 4px;
+  width: 100%;
+}
+
+/* 穿搭靈感區塊行動版 */
+@media(max-width:767px) {
+  .inspiration-row {
+    flex-wrap: nowrap;
+    margin: 0 -8px;
+    /*把左右兩側間距拿掉*/
+  }
+
+  .inspiration-row img {
+    min-width: 300px;
+  }
+
+  .inspiration-col-4,
+  .inspiration-col-6,
+  .inspiration-col-12 {
+    width: unset;
+    /* 清除容器寬度 */
+    padding: 0 8px;
+    /*行動版間距是16,16/2=8*/
+  }
 }

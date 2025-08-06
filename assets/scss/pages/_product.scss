@@ -1,0 +1,95 @@
+/* 產品圖片--(格線系統) */
+.product-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -4px;
+  margin-left: -4px;
+  /* 加上左右兩側margin，避免出現橫向捲軸 */
+}
+
+.product-col {
+  width: calc(100%/12*6);
+  /* gutter 間距是8,8/2=4*/
+  padding-right: 4px;
+  padding-left: 4px;
+}
+
+
+@media(max-width:767px) {
+  .product-row {
+    flex-wrap: nowrap;
+  }
+
+  .product-row img {
+    min-width: 375px;
+  }
+
+  /*要記得清除容器寬度喔*/
+  .product-col {
+    width: unset;
+  }
+
+}
+
+.pdct-sm {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--netural-500);
+  padding-left: 8px;
+}
+
+.product-color {
+  width: 64px;
+  text-align: center;
+  color: var(--netural-600);
+}
+
+/* 產品尺寸按鈕 */
+.btn-product-size {
+  border: 1px solid var(--netural-300);
+  width: 160px;
+}
+
+.btn-product-size.active,
+.btn-product-size:hover {
+  border-color: var(--netural-900);
+}
+
+
+.product-action {
+  display: flex;
+  gap: 8px;
+}
+
+.product-action .btn {
+  width: 50%;
+}
+
+.product-action .bi {
+  margin-right: 8px;
+}
+
+.product-info-title {
+  font-weight: 500;
+}
+
+@media(max-width:767px){
+.maybe-md-row{
+flex-wrap: nowrap;
+margin-right: -8px;
+margin-left: -8px;
+}
+.maybe-md-col{
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.maybe-md-col img{
+  min-width: 300px;
+}
+ /*要記得清除容器寬度喔*/
+.maybe,.col-3{
+  width: unset;
+}
+}
+

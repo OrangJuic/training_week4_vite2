@@ -1,0 +1,659 @@
+/* 通用樣式 */
+.container {
+  max-width: 1296px;
+  margin: 0 auto;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.container-fluid {
+  margin: 0 auto;
+}
+
+.display1 {
+  font-size: 64px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 1.2;
+}
+
+.display2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-style: bold;
+  line-height: 1.2;
+}
+
+.h1 {
+  font-size: 40px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.h2 {
+  font-size: 32px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.h3 {
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.h5 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.h4 {
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.h6 {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+/* 響應式設定 */
+@media(max-width:767px) {
+  .h2-md {
+    font-size: 32px;
+  }
+
+  .h3-md {
+    font-size: 28px;
+  }
+
+  .h4-md {
+    font-size: 24px;
+  }
+
+  .h5-md {
+    font-size: 20px;
+  }
+
+  .h6-md {
+    font-size: 16px;
+  }
+
+  .display2-md {
+    font-size: 48px;
+    font-weight: 700;
+    font-style: bold;
+    line-height: 1.2;
+  }
+
+  .text-sm-md {
+    font-size: 14px;
+  }
+}
+
+@media(max-width:576px) {
+  .h3-sm {
+    font-size: 28px;
+  }
+
+  .h5-sm {
+    font-size: 20px;
+  }
+
+  .h6-sm {
+    font-size: 16px;
+  }
+}
+
+.t-center {
+  text-align: center;
+}
+
+.text-sm {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--netural-600);
+}
+
+.text-lg {
+  font-size: 20px;
+  font-weight: 400;
+  color: var(--netural-500);
+}
+
+.text-netural-900 {
+  color: var(--neutral-900);
+}
+
+.text-primary-400 {
+  color: var(--primary-400);
+}
+
+.text-primary-300 {
+  color: var(--primary-300);
+}
+
+
+.text-white {
+  color: var(--netural-0);
+}
+
+.text-netural-600 {
+  color: var(--netural-600);
+}
+
+.text-danger-300 {
+  color: var(--danger-300);
+}
+
+.bg-netural-100 {
+  background-color: var(--netural-100);
+}
+
+.bg-primary-100 {
+  background-color: var(--primary-100);
+}
+
+.bg-primary-200 {
+  background-color: var(--primary-200);
+}
+
+.py-64 {
+  /* 往y方向(上下)加padding */
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.py-48 {
+  padding-top: 48px;
+  padding-bottom: 48px;
+}
+
+.py-12 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.py-16 {
+  /* 往y方向(上下)加padding */
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.py-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.px-24 {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-32 {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.pb-48 {
+  padding-bottom: 48px;
+}
+
+.pb-24 {
+  padding-bottom: 24px;
+}
+
+.p-32 {
+  padding: 32px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+/* RWD */
+@media(max-width:767px) {
+
+  .px-md-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+ .py-md-0 {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  .py-md-16 {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
+  .py-md-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .py-md-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+
+  .py-md-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .pb-md-32 {
+    padding-bottom: 32px;
+  }
+
+  .p-md-24 {
+    padding: 24px;
+  }
+
+  .px-md-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+}
+
+@media(max-width:576px) {
+  .px-sm-12 {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .py-sm-12 {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .py-sm-32 {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.mb-48 {
+  margin-bottom: 48px;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+.mb-32 {
+  margin-bottom: 32px;
+}
+
+.mb-28 {
+  margin-bottom: 28px;
+}
+
+.mb-24 {
+  margin-bottom: 24px;
+}
+
+.mb-16 {
+  margin-bottom: 16px;
+}
+
+.mb-12 {
+  margin-bottom: 12px;
+}
+
+.mb-8 {
+  margin-bottom: 8px;
+}
+
+.mb-4 {
+  margin-bottom: 4px;
+}
+
+.mt-40{
+  margin-top: 40px;
+}
+
+.mr-48 {
+  margin-right: 48px;
+}
+
+.mr-40 {
+  margin-right: 40px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mr-8 {
+  margin-right: 8px;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mr-auto {
+  margin-right: auto;
+}
+
+/* rwd */
+@media(max-width:767px) {
+.mb-md-0 {
+    margin-bottom: 0px;
+  }
+
+  .mb-md-8 {
+    margin-bottom: 8px;
+  }
+
+  .mb-md-12 {
+    margin-bottom: 12px;
+  }
+
+  .mb-md-16 {
+    margin-bottom: 16px;
+  }
+
+  .mb-md-24 {
+    margin-bottom: 24px;
+  }
+
+  .mb-md-32 {
+    margin-bottom: 32px;
+  }
+
+  .mb-md-36 {
+    margin-bottom: 36px;
+  }
+
+  .mr-md-16 {
+    margin-right: 16px;
+  }
+
+  .ml-md-12 {
+    margin-left: 12px;
+  }
+
+  .mt-md-24{
+    margin-top: 24px;
+  }
+
+}
+
+@media(max-width:576px) {
+
+  .mr-sm-0 {
+    margin-right: 0px;
+  }
+
+
+  .mr-sm-16 {
+    margin-right: 16px;
+  }
+
+  .ml-sm-12 {
+    margin-left: 12px;
+  }
+
+  .mb-sm-4 {
+    margin-bottom: 4px;
+  }
+
+  .mb-sm-8 {
+    margin-bottom: 8px;
+  }
+
+}
+
+/* 第三區塊條列式框線裝飾用 */
+.pr-8 {
+  padding-right: 8px;
+}
+
+
+
+
+/* 底下灰色線設置 */
+.section-line {
+  border-bottom: 1px solid var(--netural-300);
+}
+
+
+
+
+
+
+/* 格線系統 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  /* 加負的margin避免出現橫向捲軸 */
+}
+
+.col-1 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12);
+}
+
+.col-2 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*2);
+}
+
+.col-3 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*3);
+}
+
+.col-4 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*4);
+}
+
+.col-5 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*5);
+}
+
+.col-6 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*6);
+}
+
+.col-7 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*7);
+}
+
+.col-8 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*8);
+}
+
+.col-9 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*9);
+}
+
+.col-10 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*10);
+}
+
+.col-11 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*11);
+}
+
+.col-12 {
+  padding-right: 12px;
+  padding-left: 12px;
+  width: calc(100%/12*12);
+}
+
+/* 行動版格線 */
+@media(max-width:767px) {
+  .row {
+    margin-left: -6px;
+    margin-right: -6px;
+  }
+
+  .md-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+  margin-right: -12px;
+  /* 加負的margin避免出現橫向捲軸 */
+}
+
+  .col-md-1 {
+    padding-right: 6px;
+    padding-left: 6px;
+    width: calc(100%/4*1);
+  }
+
+  .col-md-2 {
+    padding-right: 6px;
+    padding-left: 6px;
+    width: calc(100%/4*2);
+  }
+
+  .col-md-3 {
+    padding-right: 6px;
+    padding-left: 6px;
+    width: calc(100%/4*3);
+  }
+
+  .col-md-4 {
+    padding-right: 6px;
+    padding-left: 6px;
+    width: calc(100%/4*4);
+  }
+
+}
+
+
+
+
+/*week2開始 flex 樣式 */
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.gap-8 {
+  gap: 8px;
+}
+
+.d-none {
+  display: none;
+}
+
+
+
+@media(max-width:767px) {
+  .d-md-flex {
+    display: flex;
+  }
+
+  /* 顯示 */
+  .d-md-block {
+    display: block;
+  }
+
+  /* 隱藏 */
+  .d-md-none {
+    display: none;
+  }
+
+
+  .d-md-flex-column {
+    flex-direction: column;
+  }
+
+  .d-md-align-start {
+    align-items: start;
+  }
+
+  .flex-md-nowrap {
+    flex-wrap: nowrap;
+  }
+
+  /* 滾動條樣式 */
+  .overflow-x-md-auto {
+    overflow: auto;
+    overflow-x: auto;
+  }
+
+  /* 間距控制 */
+  .gap-md-8 {
+    gap: 8px;
+  }
+
+  .gap-md-4 {
+    gap: 4px;
+  }
+}
+
+@media(max-width:576px) {
+  .d-sm-block {
+    display: block;
+  }
+
+  .d-sm-none {
+    display: none;
+  }
+}

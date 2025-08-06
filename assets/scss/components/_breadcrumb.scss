@@ -1,0 +1,29 @@
+/* 元件 */
+/* 麵包屑 */
+.breadcrumb-item+.breadcrumb-item::before {
+  content: '/';
+  padding: 0 12px;
+  color: var(--netural-300);
+  font-weight: 700;
+  /* 此為分隔符號設定 */
+}
+
+.breadcrumb-item {
+  display: flex;
+  font-weight: 500;
+  /* 此為麵包屑文字 */
+}
+
+.breadcrumb-link {
+  color: var(--netural-600);
+}
+
+@media(max-width:767px) {
+  .breadcrumb-item+.breadcrumb-item::before {
+    padding: 0 8px;
+  }
+
+  .breadcrumb-item {
+    font-size: 14px;
+  }
+}

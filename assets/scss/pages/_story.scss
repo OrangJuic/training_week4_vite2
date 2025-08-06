@@ -1,0 +1,66 @@
+.story-list a {
+  color: var(--primary-400);
+  /* 代入方式，var(變數名稱) */
+  text-underline-offset: 4px;
+  display: block;
+  text-decoration: underline;
+}
+
+
+
+/* 第三區塊條列式框線裝飾用 */
+.history-desc {
+  border-left: 1px solid var(--neutral-900);
+  padding-left: 8px;
+}
+
+.history-list {
+  list-style-type: disc;
+  padding-left: 24px;
+}
+
+/* 第四區塊條列式裝飾用框線*/
+.Concept-desc {
+  border-left: 3px solid var(--netural-300);
+  padding-left: 12px;
+}
+
+/* 第五區塊icon設定 */
+.bi {
+  padding-right: 8px;
+  vertical-align: bottom;
+  /* 對齊下面 */
+}
+
+
+/* 區塊相關設定 */
+.story-banner {
+  background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week1/hero.png?raw=true);
+  background-repeat: no-repeat;
+  /* 背景圖不重複 */
+  background-position: center;
+  /* 背景圖位置－置中 */
+  background-size: cover;
+  /* 背景圖填滿容器區塊 */
+  padding: 152px 0;
+  text-align: center;
+}
+
+@media(max-width:767px) {
+  .story-banner {
+    padding: 87px 0;
+    background-image: url(https://github.com/hexschool/2022-web-layout-training/blob/main/2025-week3-4/hero-sm.png?raw=true);
+  }
+}
+
+.BlockQuote {
+  border-radius: 12px;
+  text-align: center;
+}
+
+@media(max-width:767px) {
+  .BlockQuote {
+    text-align: left;
+  }
+}
+

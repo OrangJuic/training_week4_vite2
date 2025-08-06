@@ -1,0 +1,14 @@
+/* 分頁按鈕設定 */
+.page-item .btn{
+  padding: 8px 15px;
+  border-radius: 0;
+}
+
+.page-item .active{
+background-color: var(--primary-300);
+font-weight: 500;
+}
+
+
+
+

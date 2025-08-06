@@ -1,0 +1,16 @@
+/* 這邊是變數 */
+/* 顏色-使用變數去設定網站主色，下方如欲使用顏色則用變數代入，好處是如果網站需更改主色，其餘地方也會一起做更動，相對方便*/
+:root {
+  --primary-400: #57A203;
+  --primary-300: #C0FA73;
+  --primary-200: #E8FEC5;
+  --primary-100: #F5FEE7;
+  --netural-0: #ffffff;
+  --netural-100: #F8F9FA;
+  --netural-300: #DEE2E6;
+  --netural-500: #ADB5BD;
+  --netural-600: #6C757D;
+  --neutral-900: #212529;
+  --danger-300: #D74F4F;
+
+}

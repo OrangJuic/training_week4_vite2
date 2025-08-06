@@ -1,0 +1,42 @@
+
+
+/* 標籤基本樣式 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+  /* 將圖片垂直對其改成中間對齊 */
+  max-width: 100%;
+  height: auto;
+  /* 避免圖片變形 */
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: var(--neutral-900);
+}
+
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  color: var(--neutral-900);
+}
+
+
+
+
+nav a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--neutral-900);
+  text-decoration: none;
+}
+
